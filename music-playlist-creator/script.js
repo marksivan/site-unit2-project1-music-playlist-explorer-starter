@@ -86,7 +86,7 @@ function createPlaylistCards(playlists) {
          <img src="${playlist.playlist_art}" alt="">
          <div class="playlist-info">
            <b>${playlist.playlist_name}<br></b>
-           <i>${playlist.playlist_author}</i>
+           <i>By ${playlist.playlist_author}</i>
          </div>
 
        `;
@@ -130,6 +130,7 @@ function createPlaylistCards(playlists) {
      container.appendChild(card);
    });
  }
+
 
  // Modal close behavior
  document.querySelector('.close').addEventListener('click', function () {
