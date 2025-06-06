@@ -94,7 +94,7 @@ footer{
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0,0,0,0.7);
     /* justify-content: center;
     align-items: center;*/
  }
@@ -136,6 +136,8 @@ footer{
     margin: 2vh;
     margin-left: 100px;
     margin-bottom: 30px;
+    border: #888 4px solid;
+    border-radius: 10px;
 
  }
 
@@ -145,7 +147,7 @@ footer{
  }
 
  .modal-card{
-    border: #888 1px solid;
+    border: #888 2px solid;
     margin-bottom: 20px;
     width: 90%;
     height: 90px;
@@ -183,6 +185,6 @@ footer{
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    width: 78%;
+    width: 76%;
 
  }
