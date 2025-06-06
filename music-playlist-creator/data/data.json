@@ -1,0 +1,91 @@
+[
+  {
+    "playlistID": 101,
+    "playlist_name": "Chill Vibes",
+    "playlist_author": "Ava Martinez",
+    "playlist_art": "assets/img/playlist.png",
+    "songs": [
+      { "title": "Sunflower", "artist": "Post Malone", "duration": "2:38" },
+      { "title": "Someone You Loved", "artist": "Lewis Capaldi", "duration": "3:02" },
+      { "title": "Lovely", "artist": "Billie Eilish", "duration": "3:21" }
+    ]
+  },
+  {
+    "playlistID": 102,
+    "playlist_name": "Workout Power",
+    "playlist_author": "Jake Turner",
+    "playlist_art": "assets/img/playlist.png",
+    "songs": [
+      { "title": "Stronger", "artist": "Kanye West", "duration": "5:12" },
+      { "title": "Lose Yourself", "artist": "Eminem", "duration": "5:26" },
+      { "title": "Can't Hold Us", "artist": "Macklemore & Ryan Lewis", "duration": "4:18" }
+    ]
+  },
+  {
+    "playlistID": 103,
+    "playlist_name": "Indie Mornings",
+    "playlist_author": "Liam Chen",
+    "playlist_art": "assets/img/playlist.png",
+    "songs": [
+      { "title": "Electric Feel", "artist": "MGMT", "duration": "3:49" },
+      { "title": "Ophelia", "artist": "The Lumineers", "duration": "2:40" },
+      { "title": "Take a Walk", "artist": "Passion Pit", "duration": "4:25" }
+    ]
+  },
+  {
+    "playlistID": 104,
+    "playlist_name": "Throwback Hits",
+    "playlist_author": "Maria Lopez",
+    "playlist_art": "assets/img/playlist.png",
+    "songs": [
+      { "title": "Billie Jean", "artist": "Michael Jackson", "duration": "4:54" },
+      { "title": "Hey Ya!", "artist": "OutKast", "duration": "3:55" },
+      { "title": "Smells Like Teen Spirit", "artist": "Nirvana", "duration": "5:02" },
+      { "title": "Crazy in Love", "artist": "Beyoncé ft. Jay-Z", "duration": "3:56" }
+    ]
+  },
+  {
+    "playlistID": 105,
+    "playlist_name": "Jazz Essentials",
+    "playlist_author": "Nathan Brooks",
+    "playlist_art": "assets/img/playlist.png",
+    "songs": [
+      { "title": "So What", "artist": "Miles Davis", "duration": "9:22" },
+      { "title": "Take Five", "artist": "Dave Brubeck", "duration": "5:24" },
+      { "title": "Feeling Good", "artist": "Nina Simone", "duration": "2:54" }
+    ]
+  },
+  {
+    "playlistID": 106,
+    "playlist_name": "Pop Party",
+    "playlist_author": "Sophie Kim",
+    "playlist_art": "assets/img/playlist.png",
+    "songs": [
+      { "title": "Levitating", "artist": "Dua Lipa", "duration": "3:23" },
+      { "title": "Blinding Lights", "artist": "The Weeknd", "duration": "3:20" },
+      { "title": "Don't Start Now", "artist": "Dua Lipa", "duration": "3:03" }
+    ]
+  },
+  {
+    "playlistID": 107,
+    "playlist_name": "Classical Calm",
+    "playlist_author": "Olivia Brown",
+    "playlist_art": "assets/img/playlist.png",
+    "songs": [
+      { "title": "Clair de Lune", "artist": "Claude Debussy", "duration": "5:12" },
+      { "title": "Nocturne Op.9 No.2", "artist": "Frederic Chopin", "duration": "4:30" },
+      { "title": "The Four Seasons", "artist": "Antonio Vivaldi", "duration": "42:00" }
+    ]
+  },
+  {
+    "playlistID": 108,
+    "playlist_name": "Hip-Hop Beats",
+    "playlist_author": "Marcus Lee",
+    "playlist_art": "assets/img/playlist.png",
+    "songs": [
+      { "title": "Sicko Mode", "artist": "Travis Scott", "duration": "5:13" },
+      { "title": "God's Plan", "artist": "Drake", "duration": "3:18" },
+      { "title": "HUMBLE.", "artist": "Kendrick Lamar", "duration": "2:57" }
+    ]
+  }
+]
