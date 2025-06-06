@@ -8,12 +8,13 @@ body {
 }
 
 header{
-    border: #ccc 2px solid;
+    border:rgb(166, 166, 197) 2px solid;
     height: 8vh;
     border-right: none;
     border-left: none;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(207, 172, 172);
 
 
 }
@@ -30,6 +31,7 @@ main{
     /* border: #ccc 0px solid; */
     /* height: 85vh; */
     padding: 0;
+    background-color: rgb(245, 233, 233);
 
 
 }
@@ -40,6 +42,8 @@ footer{
     border-right: none;
     border-left: none;
     border-bottom: none;
+    background-color: rgb(214, 176, 176);
+
 }
 
 #playlist-cards{
@@ -61,10 +65,18 @@ footer{
     overflow: hidden;
     /* margin-right: 40px; */
     border-radius: 10px;
-    box-shadow: 10px 10px 12px rgba(0,0,0,0.6);
+    box-shadow: 10px 10px 12px rgba(0,0,0,1.0);
+    transition: all 0.4s ease;
+}
+
+.playlist-card:hover{
+    transform: scale(1.04);
+
+
 
 
 }
+
 .playlist-card>img{
     height: 65%;
     width: 100%;
@@ -86,9 +98,7 @@ footer{
     align-items: center;
 
 }
-.heart-container:hover{
-    background-color: rgb(176, 21, 21);
-}
+
 
 .like-container{
     display: flex;
@@ -126,16 +136,18 @@ footer{
     align-items: center;*/
  }
  .modal-content {
-    background-color: #fefefe;
+    background-color:rgb(212, 190, 190);
     margin: 15% auto;
     padding: 2px;
     border: 1px solid #888;
     width: 70%;
-    height: 70%;
+    height: 80%;
     margin-top: 120px;
     border-radius: 50px;
     /* overflow: scroll; */
     padding-right: 50px;
+    border: black 4px solid;
+    box-shadow: 10px 10px 12px rgba(0,0,0,1.0);
 
  }
  .close {
@@ -165,12 +177,30 @@ footer{
     margin-bottom: 30px;
     border: #888 4px solid;
     border-radius: 10px;
-
+    transition: all 0.3s ease;
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.9);
  }
 
- .modal-title>p{
-    display: inline-block;
+ .modal-title>img:hover{
+    transform: scale(1.04);
+ }
 
+ .playlist-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20px;
+    font-size: 1.2em;
+ }
+
+ .modal-playlist-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+ }
+
+ .modal-playlist-creator {
+    font-style: italic;
  }
 
  .modal-card{
@@ -183,8 +213,13 @@ footer{
     display: flex;
     overflow: hidden;
     border-radius: 10px;
+    box-shadow: 8px 8px 8px rgba(0,0,0,1.0);
+    background-color: rgb(245, 233, 233);
 
+ }
 
+ .modal-card:hover{
+    transform: scale(1.02);
 
  }
 
@@ -197,6 +232,8 @@ footer{
     padding-top: 50px;
     height: 40%;
     border-radius: 20px;
+    background-color: rgb(221, 187, 187);
+
 
 
 
@@ -209,6 +246,7 @@ footer{
     margin-top: 5px;
     border-radius: 3px;
 
+
  }
 
  .song-info{
@@ -217,5 +255,26 @@ footer{
     text-overflow: ellipsis;
     white-space: nowrap;
     width: 76%;
+
+ }
+
+ .shuffle-button{
+    margin-left: 160px;
+    margin-bottom: 20px;
+    border-radius: 7px;
+    width: 8vw;
+    height: 4vh;
+    color: white;
+    background-color: blue;
+    box-shadow: 10px 10px 12px rgba(0,0,0,0.4);
+    font-size: medium;
+    transition: all 0.4s ease;
+
+ }
+
+ .shuffle-button:hover{
+    transform: scale(1.09);
+    background-color: rgb(55, 55, 231);
+
 
  }

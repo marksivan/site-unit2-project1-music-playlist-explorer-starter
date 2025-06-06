@@ -66,7 +66,7 @@ function createPlaylistCards(playlists) {
            <div class="song-info">
              ${song.title || 'Unknown Title'}<br>
              ${song.artist || 'Unknown Artist'}<br>
-             Duration: ${song.duration || '0:00'}
+             ${song.duration || '0:00'}
            </div>
          </div>
        `).join('');
@@ -74,8 +74,8 @@ function createPlaylistCards(playlists) {
        document.querySelector('.modal-title').innerHTML = `
          <img src="${playlist.playlist_art}" alt="">
          <div class="playlist-info">
-           ${playlist.playlist_name}<br>
-           ${playlist.playlist_author}
+           <b>${playlist.playlist_name}<br></b>
+           <i>${playlist.playlist_author}</i>
          </div>
        `;
      });
