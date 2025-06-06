@@ -77,7 +77,43 @@ function createPlaylistCards(playlists) {
            <b>${playlist.playlist_name}<br></b>
            <i>${playlist.playlist_author}</i>
          </div>
+
        `;
+
+       // Remove existing shuffle button if it exists
+       const existingButton = document.querySelector('#shuffle-button');
+       if (existingButton) {
+         existingButton.parentElement.remove();
+       }
+
+       // Create and append shuffle button
+       const shuffleButtonContainer = document.createElement('div');
+       shuffleButtonContainer.classList.add('shuffle-container');
+
+       const shuffleButton = document.createElement('button');
+       shuffleButton.classList.add('shuffle-button');
+       shuffleButton.id = 'shuffle-button';
+       shuffleButton.textContent = 'Shuffle 🔀';
+
+       shuffleButtonContainer.appendChild(shuffleButton);
+
+       // Insert the shuffle button between modal-title and modal-cards
+       const modalTitle = document.querySelector('.modal-title');
+       const modalCards = document.querySelector('.modal-cards');
+       modalTitle.parentNode.insertBefore(shuffleButtonContainer, modalCards);
+
+       // Add event listener to shuffle button
+       shuffleButton.addEventListener('click', () => {
+         const modalCards = document.querySelector('.modal-cards');
+         const cards = Array.from(modalCards.children);
+
+         // Shuffle the cards
+         for (let i = cards.length - 1; i > 0; i--) {
+           const j = Math.floor(Math.random() * (i + 1));
+           modalCards.appendChild(cards[j]);
+         }
+       });
+
      });
 
      container.appendChild(card);
