@@ -13,6 +13,17 @@ function createPlaylistCards(playlists) {
      img.src = playlist.playlist_art;
      img.alt = playlist.playlist_name;
 
+     // Add error handling for image loading
+     img.onerror = function() {
+       console.error('Error loading image:', playlist.playlist_art);
+       // Fallback to a default image if the specified one fails to load
+       img.src = 'assets/img/playlist.png';
+     };
+
+     img.onload = function() {
+       console.log('Image loaded successfully:', playlist.playlist_art);
+     };
+
      const title = document.createElement('h3');
      title.textContent = playlist.playlist_name;
 
