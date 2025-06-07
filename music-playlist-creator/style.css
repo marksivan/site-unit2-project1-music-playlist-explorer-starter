@@ -16,14 +16,18 @@ header{
     font-family: 'Times New Roman', Times, serif;
     background-color: rgb(207, 172, 172);
 
-
 }
+
 header>div>a{
    color: blue;
    font-weight: bold;
    font-family:sans-serif;
+   transition: all 0.3s ease;
 }
 
+header>div>a:hover{
+   color: rgb(209, 53, 53);
+}
 header>div{
    margin-left: 20px;
 }
@@ -172,6 +176,209 @@ footer{
     cursor: pointer;
  }
 
+/* Add Playlist Button and Form Styles */
+.add-playlist-container {
+   display: flex;
+   justify-content: center;
+   margin: 20px 0;
+}
+
+#add-playlist-btn {
+   background-color: #4CAF50;
+   color: white;
+   border: none;
+   padding: 12px 24px;
+   font-size: 16px;
+   border-radius: 8px;
+   cursor: pointer;
+   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+   transition: all 0.3s ease;
+}
+
+#add-playlist-btn:hover {
+   background-color: #45a049;
+   transform: scale(1.05);
+}
+
+/* Playlist Form Modal Styles */
+.playlist-form-modal-overlay {
+   display: none;
+   position: fixed;
+   z-index: 2;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0,0,0,0.7);
+}
+
+.playlist-form-modal {
+   background-color: rgb(221, 187, 187);
+   margin: 5% auto;
+   padding: 30px;
+   border: 4px solid black;
+   width: 60%;
+   max-height: 80vh;
+   overflow-y: auto;
+   border-radius: 20px;
+   box-shadow: 10px 10px 12px rgba(0,0,0,1.0);
+}
+
+.close-playlist-form {
+   color: #aaa;
+   float: right;
+   font-size: 28px;
+   font-weight: bold;
+   cursor: pointer;
+}
+
+.close-playlist-form:hover {
+   color: black;
+}
+
+.playlist-form-modal h2 {
+   text-align: center;
+   margin-bottom: 20px;
+   font-size: 24px;
+}
+
+.form-group {
+   margin-bottom: 20px;
+}
+
+.form-group label {
+   display: block;
+   margin-bottom: 8px;
+   font-weight: bold;
+}
+
+.form-group input[type="text"] {
+   width: 100%;
+   padding: 10px;
+   border: 2px solid #ccc;
+   border-radius: 5px;
+   font-size: 16px;
+}
+
+.form-help {
+   font-size: 12px;
+   color: #666;
+   margin-top: 5px;
+}
+
+#songs-container {
+   margin-bottom: 15px;
+}
+
+.song-input {
+   display: flex;
+   gap: 10px;
+   margin-bottom: 10px;
+   align-items: center;
+}
+
+.song-input input {
+   flex: 1;
+   padding: 8px;
+   border: 2px solid #ccc;
+   border-radius: 5px;
+}
+
+.remove-song {
+   background-color: #ff4d4d;
+   color: white;
+   border: none;
+   border-radius: 50%;
+   width: 25px;
+   height: 25px;
+   font-size: 12px;
+   cursor: pointer;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+#add-song-btn {
+   background-color: #2196F3;
+   color: white;
+   border: none;
+   padding: 8px 16px;
+   border-radius: 5px;
+   cursor: pointer;
+   margin-top: 10px;
+}
+
+#add-song-btn:hover {
+   background-color: #0b7dda;
+}
+
+.form-actions {
+   display: flex;
+   justify-content: center;
+   gap: 20px;
+   margin-top: 30px;
+}
+
+#save-playlist-btn {
+   background-color: #4CAF50;
+   color: white;
+   border: none;
+   padding: 12px 24px;
+   border-radius: 5px;
+   cursor: pointer;
+   font-size: 16px;
+}
+
+#save-playlist-btn:hover {
+   background-color: #45a049;
+}
+
+#cancel-playlist-btn {
+   background-color: #f44336;
+   color: white;
+   border: none;
+   padding: 12px 24px;
+   border-radius: 5px;
+   cursor: pointer;
+   font-size: 16px;
+}
+
+#cancel-playlist-btn:hover {
+   background-color: #d32f2f;
+}
+
+/* Edit and Delete Buttons */
+.playlist-actions {
+   display: flex;
+   justify-content: space-between;
+   margin-top: 10px;
+}
+
+.edit-playlist, .delete-playlist {
+   background: none;
+   border: none;
+   cursor: pointer;
+   font-size: 16px;
+   padding: 5px;
+   transition: all 0.3s ease;
+}
+
+.edit-playlist {
+   color: #2196F3;
+}
+
+.edit-playlist:hover {
+   color: #0b7dda;
+}
+
+.delete-playlist {
+   color: #f44336;
+}
+
+.delete-playlist:hover {
+   color: #d32f2f;
+}
+
 /* Featured Page Styles */
 .featured-container {
    display: flex;
@@ -281,7 +488,7 @@ footer{
    font-size: 0.9em;
 }
 
-/* Responsive design for featured page */
+/* Responsive design for featured page
 @media (max-width: 768px) {
    .featured-container {
       flex-direction: column;
@@ -291,7 +498,7 @@ footer{
       width: 250px;
       height: 250px;
    }
-}
+} */
 
  .modal-title{
     margin-top: 2vh;

@@ -4,6 +4,7 @@
     "playlist_name": "Chill Vibes",
     "playlist_author": "Ava Martinez",
     "playlist_art": "./assets/img/chillvibes.png",
+    "likes": 342,
     "songs": [
       { "title": "Sunflower", "artist": "Post Malone", "duration": "2:38" },
       { "title": "Someone You Loved", "artist": "Lewis Capaldi", "duration": "3:02" },
@@ -15,6 +16,7 @@
     "playlist_name": "Workout Power",
     "playlist_author": "Jake Turner",
     "playlist_art": "assets/img/gym-playlist-2.jpg",
+    "likes": 187,
     "songs": [
       { "title": "Stronger", "artist": "Kanye West", "duration": "5:12" },
       { "title": "Lose Yourself", "artist": "Eminem", "duration": "5:26" },
@@ -26,6 +28,7 @@
     "playlist_name": "Indie Mornings",
     "playlist_author": "Liam Chen",
     "playlist_art": "assets/img/indiemornings.jpeg",
+    "likes": 256,
     "songs": [
       { "title": "Electric Feel", "artist": "MGMT", "duration": "3:49" },
       { "title": "Ophelia", "artist": "The Lumineers", "duration": "2:40" },
@@ -37,6 +40,7 @@
     "playlist_name": "Throwback Hits",
     "playlist_author": "Maria Lopez",
     "playlist_art": "assets/img/throwback.jpg",
+    "likes": 0,
     "songs": [
       { "title": "Billie Jean", "artist": "Michael Jackson", "duration": "4:54" },
       { "title": "Hey Ya!", "artist": "OutKast", "duration": "3:55" },
@@ -49,6 +53,7 @@
     "playlist_name": "Jazz Essentials",
     "playlist_author": "Nathan Brooks",
     "playlist_art": "assets/img/jazzessentials.jpg",
+    "likes": 129,
     "songs": [
       { "title": "So What", "artist": "Miles Davis", "duration": "9:22" },
       { "title": "Take Five", "artist": "Dave Brubeck", "duration": "5:24" },
@@ -60,6 +65,7 @@
     "playlist_name": "Pop Party",
     "playlist_author": "Sophie Kim",
     "playlist_art": "assets/img/popparty.jpeg",
+    "likes": 478,
     "songs": [
       { "title": "Levitating", "artist": "Dua Lipa", "duration": "3:23" },
       { "title": "Blinding Lights", "artist": "The Weeknd", "duration": "3:20" },
@@ -71,6 +77,7 @@
     "playlist_name": "Classical Calm",
     "playlist_author": "Olivia Brown",
     "playlist_art": "assets/img/classicalcalm.jpeg",
+    "likes": 95,
     "songs": [
       { "title": "Clair de Lune", "artist": "Claude Debussy", "duration": "5:12" },
       { "title": "Nocturne Op.9 No.2", "artist": "Frederic Chopin", "duration": "4:30" },
@@ -82,6 +89,7 @@
     "playlist_name": "Hip-Hop Beats",
     "playlist_author": "Marcus Lee",
     "playlist_art": "assets/img/hiphop3.jpg",
+    "likes": 312,
     "songs": [
       { "title": "Sicko Mode", "artist": "Travis Scott", "duration": "5:13" },
       { "title": "God's Plan", "artist": "Drake", "duration": "3:18" },

@@ -12,7 +12,7 @@
 <body>
 
     <header>
-        <h1 style="text-align: center; display: inline; margin-right: 50px;" >	 Music Playlist Explorer</h1>
+        <h1 style="text-align: center; display: inline; margin-right: 50px; text-shadow: 2px 2px #9a0c0c;" >	 Music Playlist Explorer</h1>
         <div style="display: inline;">
           <a style="margin-left: 2%;" href="featured.html">Featured</a>
           <a href="index.html"> All</a>
@@ -21,15 +21,19 @@
 
 
    <main>
+    <div class="add-playlist-container">
+      <button id="add-playlist-btn">+ Add New Playlist</button>
+    </div>
     <div class="playlist-container"></div>
    </main>
 
 
     <footer>
-        <p>footer</p>
+
 
     </footer>
 
+    <!-- Playlist Details Modal -->
     <div class="modal-overlay">
         <div class="modal-content">
             <span class="close">&times;</span>
@@ -39,15 +43,57 @@
                    <p class="modal-playlist-title">Playlist Title</p>
                    <p class="modal-playlist-creator">Creator Name</p>
                 </div>
-        </div>
-        <div>
-        <!-- <button class="shuffle-button"></button> -->
-        </div>
+            </div>
+            <div>
+            <!-- <button class="shuffle-button"></button> -->
+            </div>
 
-        <div class="modal-cards">
+            <div class="modal-cards">
 
+            </div>
         </div>
-      </div>
+    </div>
+
+    <!-- Add/Edit Playlist Modal -->
+    <div class="playlist-form-modal-overlay">
+        <div class="playlist-form-modal">
+            <span class="close-playlist-form">&times;</span>
+            <h2 id="playlist-form-title">Create New Playlist</h2>
+            <form id="playlist-form">
+                <input type="hidden" id="playlist-id" value="">
+                <div class="form-group">
+                    <label for="playlist-name">Playlist Name:</label>
+                    <input type="text" id="playlist-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="playlist-author">Author:</label>
+                    <input type="text" id="playlist-author" required>
+                </div>
+                <div class="form-group">
+                    <label for="playlist-image">Image URL:</label>
+                    <input type="text" id="playlist-image" placeholder="assets/img/playlist.png">
+                    <p class="form-help">Leave blank to use default image</p>
+                </div>
+
+                <div class="form-group">
+                    <h3>Songs</h3>
+                    <div id="songs-container">
+                        <div class="song-input">
+                            <input type="text" class="song-title" placeholder="Song Title" required>
+                            <input type="text" class="song-artist" placeholder="Artist" required>
+                            <input type="text" class="song-duration" placeholder="Duration (e.g. 3:45)" required>
+                            <button type="button" class="remove-song">✕</button>
+                        </div>
+                    </div>
+                    <button type="button" id="add-song-btn">+ Add Song</button>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" id="save-playlist-btn">Save Playlist</button>
+                    <button type="button" id="cancel-playlist-btn">Cancel</button>
+                </div>
+            </form>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
