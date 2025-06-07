@@ -3,7 +3,7 @@
 
 Submitted by: **Mark Sivan Tamakloe**
 
-Estimated time spent: **#** hours spent in total
+Estimated time spent: **#** 25 hours 
 
 Deployed Application (**required**): [Music Playlist Explorer Deployed Site](https://site-unit2-project1-music-playlist-z43x.onrender.com/)
 
