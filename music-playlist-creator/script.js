@@ -130,13 +130,18 @@ function savePlaylist() {
   });
 
   if (playlistId) {
-    // Update existing playlist
-    const index = allPlaylists.findIndex(p => p.playlistID == playlistId);
+    // Update existing playlist - convert playlistId to number for comparison
+    const playlistIdNum = parseInt(playlistId, 10);
+    const index = allPlaylists.findIndex(p => p.playlistID === playlistIdNum);
+
     if (index !== -1) {
       allPlaylists[index].playlist_name = playlistName;
       allPlaylists[index].playlist_author = playlistAuthor;
       allPlaylists[index].playlist_art = playlistImage;
       allPlaylists[index].songs = songs;
+      console.log('Updated playlist:', allPlaylists[index]);
+    } else {
+      console.error('Playlist not found for ID:', playlistId);
     }
   } else {
     // Create new playlist
@@ -150,6 +155,7 @@ function savePlaylist() {
     };
 
     allPlaylists.push(newPlaylist);
+    console.log('Created new playlist:', newPlaylist);
   }
 
   // Refresh the playlist cards
@@ -164,14 +170,24 @@ function savePlaylist() {
 // Function to delete a playlist
 function deletePlaylist(playlistId) {
   if (confirm('Are you sure you want to delete this playlist?')) {
-    const index = allPlaylists.findIndex(p => p.playlistID == playlistId);
+    // Convert playlistId to number for comparison if it's a number in data.json
+    const playlistIdNum = typeof playlistId === 'string' ? parseInt(playlistId, 10) : playlistId;
+
+    const index = allPlaylists.findIndex(p => {
+      // Handle both string and number comparisons
+      return p.playlistID === playlistIdNum || p.playlistID === playlistId;
+    });
+
     if (index !== -1) {
+      console.log('Deleting playlist:', allPlaylists[index]);
       allPlaylists.splice(index, 1);
 
       // Refresh the playlist cards
       const container = document.querySelector('.playlist-container');
       container.innerHTML = '';
       createPlaylistCards(allPlaylists);
+    } else {
+      console.error('Playlist not found for deletion. ID:', playlistId);
     }
   }
 }
@@ -262,8 +278,7 @@ function createPlaylistCards(playlists) {
       }
       likeCount.textContent = playlist.likes;
      });
-     container.appendChild(card);
-
+     // Add click event listener to the card
      card.addEventListener('click', () => {
        document.querySelector('.modal-overlay').style.display = 'block';
 
