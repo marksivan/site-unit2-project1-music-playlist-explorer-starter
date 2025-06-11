@@ -15,7 +15,7 @@ function displayFeaturedPlaylist(playlists) {
   const randomIndex = Math.floor(Math.random() * playlists.length);
   const featuredPlaylist = playlists[randomIndex];
 
-  // Create the main container with a flex layout
+  //Create the main container with a flex layout
   const mainContainer = document.querySelector('main');
   mainContainer.innerHTML = '';
   mainContainer.classList.add('featured-container');
